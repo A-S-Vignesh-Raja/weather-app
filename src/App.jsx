@@ -1,12 +1,15 @@
 import { useState } from 'react'
+import weatherapp from './Components/WeatherApp/weatherapp'
 
 import './App.css'
 
 function App() {
   
   return (
-    <div></div>
-  )
+    <div className='App'>
+      <weatherapp/>
+    </div>
+  );
 }
 
 export default App
