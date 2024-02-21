@@ -1,12 +1,13 @@
 import { useState } from 'react'
-import {weatherapp} from './Components/WeatherApp/weatherapp';
+
 import './App.css';
+import Weatherapp from './Components/WeatherApp/weatherapp';
 
 function App() {
   
   return (
     <div className='App'>
-      <weatherapp /> 
+      <Weatherapp/> 
     </div>
   );
 }
