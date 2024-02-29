@@ -1,8 +1,8 @@
 .container{
     width: 607px;
-    height: 829px;
+    height: 850px;
     margin: auto;
-    /*margin-top: 75px;*/
+    margin-top: 0;
     border-radius: 12px;
     background-image: linear-gradient(180deg,#130754 0%,#3b2f80 100%);
 }
@@ -62,9 +62,9 @@
 }
 
 .data-container{
+    margin-top: 50px;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
     color: white;
 }
 
@@ -72,5 +72,10 @@
     margin: auto;
     display: flex;
     align-items: flex-start;
-    gap: 10px;
+    gap: 12px;
+}
+
+.data{
+    font-size: 34px;
+    font-weight: 400;
 }
