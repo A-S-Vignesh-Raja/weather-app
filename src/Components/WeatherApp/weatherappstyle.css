@@ -13,3 +13,28 @@
     gap: 14px;
     padding-top: 60px;
 }
+
+.top-bar input{
+    display: flex;
+    width: 363px;
+    height: 77px;
+    background: #ebfffc;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding-left: 40px;
+    color: #626262;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.search-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    background-color: #ebfffc;
+    cursor: pointer;
+}
