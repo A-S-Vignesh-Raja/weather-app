@@ -29,8 +29,34 @@ const Weatherapp = () => {
 
     humidity[0].innerHTML=data.main.humidity+" %";
     wind[0].innerHTML=data.wind.speed+" km/h";
-    temperature[0].innerHTML=data.main.temp+"°C";
+    temperature[0].innerHTML=Math.floor(data.main.temp)+"°C";
     location[0].innerHTML=data.name;
+
+    if(data.weather[0].icon==="01d"||data.weather[0].icon==="01n"){
+      setwicon(clear_icon);
+    }
+    else if(data.weather[0].icon==="02d"||data.weather[0].icon==="02n"){
+      setwicon(cloud_icon);
+    }
+    else if(data.weather[0].icon==="03d"||data.weather[0].icon==="03n"){
+      setwicon(drizzle_icon);
+    } 
+    else if(data.weather[0].icon==="04d"||data.weather[0].icon==="04n"){
+      setwicon(drizzle_icon);
+    }
+    else if(data.weather[0].icon==="09d"||data.weather[0].icon==="09n"){
+      setwicon(rain_icon);
+    }
+    else if(data.weather[0].icon==="10d"||data.weather[0].icon==="10n"){
+      setwicon(rain_icon);
+    }
+    else if(data.weather[0].icon==="13d"||data.weather[0].icon==="13n"){
+      setwicon(snow_icon);
+    }  
+    else{
+      setwicon(clear_icon);
+    }
+
   }
   return (
     <div className="container">
@@ -41,7 +67,7 @@ const Weatherapp = () => {
         </div>
       </div>
       <div className="weather-image">
-        <img src={cloud_icon} alt="" />
+        <img src={wicon} alt="" />
       </div>
       <div className="weather-temp">24°C</div>
       <div className="weather-location">London</div>
