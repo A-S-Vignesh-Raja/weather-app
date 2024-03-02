@@ -13,12 +13,15 @@ import wind_icon from '../Assets/wind.png';
 const Weatherapp = () => {
 
   let api_key="89331c2fdabeb440df05bc1574457ee8";
+  const search =()=>{
+
+  }
   return (
     <div className="container">
       <div className="top-bar">
         <input type="text" className="cityInput" placeholder='search' />
         <div className="search-icon">
-          <img src={search_icon} alt="search" />
+          <img src={search_icon} alt="search" onClick={()=>{search()}}/>
         </div>
       </div>
       <div className="weather-image">
