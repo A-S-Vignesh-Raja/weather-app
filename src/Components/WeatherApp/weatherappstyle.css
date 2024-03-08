@@ -1,23 +1,22 @@
 .container{
-    width: 607px;
-    height: 850px;
+    width: 550px;
+    height: 650px;
     margin: auto;
     margin-top: 0;
     border-radius: 12px;
     background-image: linear-gradient(180deg,#130754 0%,#3b2f80 100%);
 }
-
 .top-bar{
     display: flex;
     justify-content: center;
     gap: 14px;
-    padding-top: 60px;
+    padding-top: 30px;
 }
 
 .top-bar input{
     display: flex;
     width: 363px;
-    height: 77px;
+    height: 57px;
     background: #ebfffc;
     border: none;
     outline: none;
@@ -32,8 +31,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 77px;
-    height: 77px;
+    width: 57px;
+    height: 57px;
     border-radius: 50%;
     background-color: #ebfffc;
     cursor: pointer;
@@ -42,14 +41,14 @@
 .weather-image{
     display: flex;
     justify-content: center;
-    margin-top: 29px;
+    margin-top: 19px;
 }
 
 .weather-temp{
     display: flex;
     color: white;
     justify-content: center;
-    font-size: 120px;
+    font-size: 80px;
     font-weight: 400;
 }
 
@@ -57,12 +56,12 @@
     display: flex;
     color: white;
     justify-content: center;
-    font-size: 60px;
+    font-size: 45px;
     font-weight: 400;
 }
 
 .data-container{
-    margin-top: 50px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     color: white;
@@ -76,15 +75,73 @@
 }
 
 .data{
-    font-size: 34px;
+    font-size: 24px;
     font-weight: 400;
 }
 
 .text{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
 }
 
 .icon{
     margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: auto; 
+    }
+
+    .top-bar {
+        padding-top: 20px;
+        padding-right: 2%;
+    }
+
+    .top-bar input {
+        width: 60%; 
+        max-width: 363px; 
+        padding-left: 2%;
+        height: 45px;
+        font-size: 22px;
+    }
+
+    .search-icon{
+        height: 45px;
+        width: 45px;
+    }
+
+    .search-icon img{
+        font-size: 10px;
+    }
+
+    .weather-image {
+        margin-top: 10px;
+    }
+
+    .weather-temp {
+        font-size: 50px; 
+        
+    }
+
+    .weather-location {
+        font-size: 35px; 
+    }
+
+    .data-container {
+        margin-top: 20px; 
+    }
+
+    .element {
+        margin-bottom: 35px; 
+    }
+
+    .data {
+        font-size: 18px;
+    }
+
+    .text {
+        font-size: 12px;
+    }
 }
