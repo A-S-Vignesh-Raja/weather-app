@@ -96,13 +96,13 @@
 
     .top-bar {
         padding-top: 20px;
-        padding-right: 2%;
+        padding-left: 20px;
     }
 
     .top-bar input {
         width: 60%; 
         max-width: 363px; 
-        padding-left: 2%;
+        padding-left: 20px;
         height: 45px;
         font-size: 22px;
     }
